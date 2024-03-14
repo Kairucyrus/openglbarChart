@@ -37,14 +37,14 @@ void drawAxes() {
     // Draw horizontal axis
     glColor3f(0.0, 0.0, 0.0);
     glBegin(GL_LINES);
-    glVertex2f(0.1, 0.1);
-    glVertex2f(0.1, 0.9);
+    glVertex2f(0.1, 0.1);//origin
+    glVertex2f(0.1, 0.9);//y-max
     glEnd();
 
     // Draw vertical axis
     glBegin(GL_LINES);
-    glVertex2f(0.1, 0.1);
-    glVertex2f(0.9, 0.1);
+    glVertex2f(0.1, 0.1);//x-min
+    glVertex2f(0.9, 0.1); //y-max
     glEnd();
 
     glColor3f(1.0, 0.0, 0.0 );
